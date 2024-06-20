@@ -1,34 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     background-color: #000000df;
 }
 
-.section1>.page1{
+.section1>.page1 {
     background-image: url(assets/image/background.jpg);
     height: 95vh;
     max-width: 100vw;
 }
 
-.section1>.page1>nav>img{
+.section1>.page1>nav>img {
     height: 40px;
     position: relative;
     z-index: 1;
 }
-.bg{
+
+.bg {
     background-color: black;
     height: 95vh;
     width: 100%;
     position: absolute;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 0;
 }
 
-.section1>.page1>nav{
+.section1>.page1>nav {
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -39,22 +40,36 @@ html{
     transform: translate(10px, 25px);
 }
 
-.section1>.page1>nav>div{
+.section1>.page1>nav>div {
     display: flex;
     gap: 10px;
 }
 
-.section1>.page1>nav>div>.btn1{
-    background-color: rgba(0, 0, 0, 0.056);
-    color: aliceblue;
-    padding: 5px 10px;
+.section1>.page1>nav>div>.btn1,
+footer>.last>.list>.l1>li>.btn1{
+    display: flex;
+    filter: invert(1);
+    border: 0.1px solid;
     border-radius: 5px;
-    font-weight: bold;
-    border: 0.5px solid white;
-    cursor: pointer;
+    gap: 5px;
+    padding: 5px;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
 }
 
-.section1>.page1>nav>div>.btn2{
+footer>.last>.list>.l1>li>.btn1{
+    width: 100px;
+}
+
+.section1>.page1>nav>div>.btn1>img{
+    height: 17px;
+}
+
+
+.section1>.page1>nav>div>.btn2 {
     background-color: rgb(229, 9, 20);
     color: white;
     padding: 5px 10px;
@@ -64,7 +79,7 @@ html{
     border: 1px rgb(229, 9, 20);
 }
 
-.section1>.page1>.text{
+.section1>.page1>.text {
     color: white;
     position: relative;
     z-index: 1;
@@ -77,28 +92,28 @@ html{
     font-family: 'Segoe UI';
 }
 
-.section1>.page1>.text>h1{
+.section1>.page1>.text>h1 {
     font-weight: 900;
     font-size: 47px;
 }
 
-.section1>.page1>.text>p:nth-child(2){
+.section1>.page1>.text>p:nth-child(2) {
     font-size: 25px;
     margin-top: 5px;
 }
 
-.section1>.page1>.text>p:nth-child(3){
+.section1>.page1>.text>p:nth-child(3) {
     font-size: 20px;
     margin-top: 10px;
 }
 
-.section1>.page1>.text>.sign{
+.section1>.page1>.text>.sign {
     margin-top: 15px;
     display: flex;
     gap: 5px;
 }
 
-.section1>.page1>.text>.sign>input{
+.section1>.page1>.text>.sign>input {
     width: 20vw;
     height: 50px;
     border-radius: 5px;
@@ -108,11 +123,11 @@ html{
     font-size: 17px;
 }
 
-.section1>.page1>.text>.sign>input::placeholder{
+.section1>.page1>.text>.sign>input::placeholder {
     color: white;
 }
 
-.section1>.page1>.text>.sign>.btn3{
+.section1>.page1>.text>.sign>.btn3 {
     width: 15vw;
     height: 50px;
     border-radius: 5px;
@@ -125,14 +140,17 @@ html{
 
 
 
-.section2{
+.section2,
+.section3,
+.section4,
+.section5 {
     background-color: black;
     height: 75vh;
     margin-top: 1vh;
     display: flex;
 }
 
-.section2>.part1{
+.section2>.part1 {
     height: 75vh;
     width: 50%;
     display: flex;
@@ -144,7 +162,7 @@ html{
     padding: 20px;
 }
 
-.section2>.part2{
+.section2>.part2 {
     height: 75vh;
     width: 50%;
     display: flex;
@@ -152,57 +170,51 @@ html{
     align-items: center;
 }
 
-.section2>.part1>h1{
+.section2>.part1>h1 {
     font-size: 47px;
     font-weight: 900;
 }
 
-.section2>.part1>span{
+.section2>.part1>span {
     font-size: 25px;
     transform: translate(125px, 10px);
     width: 640px;
 }
 
-.section2>.part2>img{
+.section2>.part2>img {
     position: relative;
     z-index: 1;
     height: 80%;
 }
 
-.section2>.part2>video{
+.section2>.part2>video {
     height: 35%;
     position: absolute;
     z-index: 0;
-    transform: translate(70px, -6px);;
+    transform: translate(70px, -6px);
+    ;
 }
 
-
-.section3{
-    display: flex;
-    background-color: black;
-    height: 75vh;
-    margin-top: 1vh;
-}
-
-.section3>.part1,.part2{
+.section3>.part1,
+.part2 {
     height: 75vh;
     width: 50%;
 }
 
-.section3>.part1{
+.section3>.part1 {
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.section3>.part1>img{
+.section3>.part1>img {
     height: 60%;
     margin-bottom: 50px;
     position: absolute;
     z-index: 0;
 }
 
-.section3>.part1>.box{
+.section3>.part1>.box {
     background-color: black;
     height: 13vh;
     width: 20vw;
@@ -216,13 +228,13 @@ html{
     align-items: center;
 }
 
-.section3>.part1>.box>img{
+.section3>.part1>.box>img {
     border-radius: 5px;
     height: 80%;
     transform: translateX(-35px);
 }
 
-.section3>.part1>.box>.p{
+.section3>.part1>.box>.p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -230,26 +242,27 @@ html{
     transform: translateX(-25px);
 }
 
-.section3>.part1>.box>.p>p:nth-child(1){
+.section3>.part1>.box>.p>p:nth-child(1) {
     color: white;
 }
-.section3>.part1>.box>.p>p:nth-child(2){
+
+.section3>.part1>.box>.p>p:nth-child(2) {
     color: #0071eb;
 }
 
-.section3>.part1>.box>.d>img{
+.section3>.part1>.box>.d>img {
     height: 45px;
     width: 55px;
     transform: translateX(45px);
 }
 
-.section3>.part1>.box>.d{
+.section3>.part1>.box>.d {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section3>.part2{
+.section3>.part2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -259,13 +272,233 @@ html{
     gap: 10px;
 }
 
-.section3>.part2>h1{
+.section3>.part2>h1 {
     font-size: 47px;
     font-weight: 900;
     width: 35vw;
 }
 
-.section3>.part2>p{
+.section3>.part2>p {
     font-size: 25px;
     width: 40vw;
+}
+
+.section4>.part1,
+.part2 {
+    height: 75vh;
+    width: 50%;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+.section4>.part1>h1 {
+    font-size: 47px;
+    font-weight: 900;
+}
+
+.section4>.part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section4>.part1>p {
+    font-size: 25px;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+
+.section4>.part2>img {
+    width: 40%;
+    margin-top: 45px;
+    position: absolute;
+    z-index: 1;
+}
+
+.section4>.part2>video {
+    position: relative;
+    width: 50%;
+    transform: translate(7vw, 10vh);
+}
+
+.section5>.part1,
+.part2 {
+    height: 75vh;
+    width: 50%;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+.section5>.part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section5>.part2>h1 {
+    font-size: 47px;
+    font-weight: 900;
+}
+
+.section5>.part2>p {
+    font-size: 25px;
+    width: 40vw;
+}
+
+.section5>.part1 {
+    display: flex;
+    justify-content: end;
+}
+
+.section5>.part1>img {
+    height: 80%;
+    margin-top: 50px;
+}
+
+.section6 {
+    height: 120vh;
+    width: 100%;
+    margin-top: 1vh;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+.section6>h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 60px;
+}
+
+.section6>.que {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 1vh;
+}
+
+.section6>.que>.q1:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.section6>.que>.q1 {
+    height: 80px;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.section6>.que>.q1>span:nth-child(1) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section6>.endtext {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI';
+    margin-top: 40px;
+    flex-direction: column;
+
+}
+
+.section6>.endtext>p {
+    font-size: 24px;
+}
+
+.section6>.endtext>.sign {
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+.section6>.endtext>.sign>input {
+    width: 20vw;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.section6>.endtext>.sign>input::placeholder {
+    color: white;
+}
+
+.section6>.endtext>.sign>.btn3 {
+    width: 15vw;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+    border: 1px rgb(229, 9, 20);
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: black;
+    height: 55vh;
+    margin-top: 1vh;
+    display: flex;
+    font-family: 'Segoe UI';
+}
+
+footer>.last{
+    width: 100%;
+}
+
+footer>.last>.num{
+    color: white;
+    display: flex;
+    width: 80%;
+    align-items: end;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 400;
+    height: 13vh;
+    margin-left: 10vw;
+}
+
+footer>.last>.num>p>a,
+footer>.last>.list>.l1>li>a,
+footer>.last>.list>.l2>li>a,
+footer>.last>.list>.l3>li>a,
+footer>.last>.list>.l4>li>a
+{
+    color: white;
+}
+
+footer>.last>.list{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 400;
+    height: 13vh;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+
+footer>.last>.list>.l1,.l2,.l3,.l4{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer>.last>.list>.l1>li:nth-child(6){
+    color: white;
+    list-style: none;
 }
